@@ -99,20 +99,20 @@ export function Ecosystem() {
           </div>
         </div>
 
-        {/* Mobile Layout (Vertical Compact Graph) */}
-        <div className="md:hidden flex flex-col items-center relative pb-8">
-           {/* Vertical Line */}
-           <div className="absolute top-[40px] bottom-[200px] left-[28px] w-[2px] bg-white/10" />
-           <div 
-            className="absolute top-[40px] left-[28px] w-[2px] bg-brand-red transition-all duration-[1500ms] ease-out z-10 shadow-[0_0_10px_rgba(227,30,36,0.8)]"
-            style={{ height: inView ? "calc(100% - 240px)" : "0%" }}
-           />
-
-           <div className="flex flex-col gap-5 w-full max-w-[280px] relative z-20">
+        {/* Mobile Layout (Side-by-Side Graph) */}
+        <div className="md:hidden flex flex-row items-center justify-between gap-4 pb-8 w-full max-w-[420px] mx-auto">
+           {/* Left Column (Nodes Timeline) */}
+           <div className="flex flex-col gap-4 w-full flex-1 relative z-20">
+             {/* Vertical Line relative to dots container */}
+             <div className="absolute top-[20px] bottom-[20px] left-[18px] w-[2px] bg-white/10 -z-10" />
+             <div 
+              className="absolute top-[20px] left-[18px] w-[2px] bg-brand-red transition-all duration-[1500ms] ease-out -z-10 shadow-[0_0_10px_rgba(227,30,36,0.8)]"
+              style={{ height: inView ? "calc(100% - 40px)" : "0%" }}
+             />
               {NODES.map((node, i) => (
                 <div 
                   key={i} 
-                  className="flex items-center gap-4 transition-all duration-700"
+                  className="flex items-center gap-3 transition-all duration-700"
                   style={{ 
                     opacity: inView ? 1 : 0, 
                     transform: inView ? "translateX(0)" : "translateX(-15px)",
@@ -120,25 +120,25 @@ export function Ecosystem() {
                   }}
                 >
                   <div className="w-4 h-4 rounded-full bg-ink border-[2px] border-brand-red shadow-[0_0_12px_rgba(227,30,36,0.6)] shrink-0 ml-[11px]" />
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-sm flex-1 shadow-lg">
-                    <h4 className="text-white text-sm font-semibold mb-0.5">{node.title}</h4>
-                    <p className="text-xs text-muted">{node.desc}</p>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-2.5 backdrop-blur-sm flex-1 shadow-lg">
+                    <h4 className="text-white text-[13px] font-semibold mb-0.5 leading-tight">{node.title}</h4>
+                    <p className="text-[11px] text-muted leading-snug">{node.desc}</p>
                   </div>
                 </div>
               ))}
            </div>
 
-           {/* Mobile Destination Phone */}
+           {/* Right Column (Mobile Destination Phone) */}
            <div 
-            className="relative z-20 mt-10 transition-all duration-1000 ease-out"
+            className="relative z-20 shrink-0 transition-all duration-1000 ease-out"
             style={{ 
               opacity: inView ? 1 : 0,
               transform: inView ? "translateY(0)" : "translateY(20px)",
               transitionDelay: "1000ms"
             }}
           >
-            <div className="w-[160px] aspect-[9/16] bg-black rounded-[24px] border-[6px] border-ink-blue shadow-2xl overflow-hidden relative mx-auto">
-               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[70px] h-[16px] bg-ink-blue rounded-b-[10px] z-20" />
+            <div className="w-[120px] aspect-[9/16] bg-black rounded-[18px] border-[5px] border-ink-blue shadow-2xl overflow-hidden relative">
+               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50px] h-[12px] bg-ink-blue rounded-b-[6px] z-20" />
                <Image 
                  src="/images/mockup-telugu.webp" 
                  alt="Tehelka News Feed" 
@@ -146,7 +146,7 @@ export function Ecosystem() {
                  className="object-cover opacity-90" 
                />
             </div>
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[11px] font-bold px-5 py-2 rounded-full whitespace-nowrap shadow-xl uppercase tracking-wider">
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[9px] font-bold px-3 py-1.5 rounded-full whitespace-nowrap shadow-xl uppercase tracking-wider">
               Your Feed
             </div>
           </div>

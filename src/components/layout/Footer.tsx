@@ -8,10 +8,10 @@ export function Footer() {
       <div className="container mx-auto max-w-[1200px] px-5 lg:px-6">
 
         {/* Main Footer Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 md:gap-16 mb-8 md:mb-20">
 
           {/* Left Side: Brand, About, Socials */}
-          <div className="flex flex-col max-w-[400px]">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-[400px] w-full mx-auto lg:mx-0">
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/images/logo.png"
@@ -47,35 +47,35 @@ export function Footer() {
           </div>
 
           {/* Right Side: Closely Grouped Link Columns */}
-          <div className="flex flex-wrap md:flex-nowrap gap-12 md:gap-20">
+          <div className="grid grid-cols-3 gap-2 sm:gap-6 md:flex md:flex-nowrap md:gap-20 w-full lg:w-auto">
             {/* Column 1 */}
-            <div className="flex flex-col min-w-[120px]">
-              <h4 className="text-paper font-semibold mb-6 text-base">Product</h4>
-              <ul className="flex flex-col gap-4">
-                <li><Link href="/#features" className="text-muted hover:text-paper transition-colors text-[15px]">Features</Link></li>
-                <li><Link href="/#languages" className="text-muted hover:text-paper transition-colors text-[15px]">Languages</Link></li>
-                <li><Link href="/#coverage" className="text-muted hover:text-paper transition-colors text-[15px]">Coverage</Link></li>
-                <li><Link href="/#download" className="text-muted hover:text-paper transition-colors text-[15px]">Download</Link></li>
+            <div className="flex flex-col">
+              <h4 className="text-paper font-semibold mb-4 md:mb-6 text-[12px] sm:text-[14px] md:text-base">Product</h4>
+              <ul className="flex flex-col gap-3 md:gap-4">
+                <li><Link href="/#features" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Features</Link></li>
+                <li><Link href="/#languages" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Languages</Link></li>
+                <li><Link href="/#coverage" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Coverage</Link></li>
+                <li><Link href="/#download" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Download</Link></li>
               </ul>
             </div>
 
             {/* Column 2 */}
-            <div className="flex flex-col min-w-[120px]">
-              <h4 className="text-paper font-semibold mb-6 text-base">Resources</h4>
-              <ul className="flex flex-col gap-4">
-                <li><Link href="/tutorials" className="text-muted hover:text-paper transition-colors text-[15px]">Tutorials</Link></li>
-                <li><Link href="/blog" className="text-muted hover:text-paper transition-colors text-[15px]">Blog</Link></li>
-                <li><Link href="/support" className="text-muted hover:text-paper transition-colors text-[15px]">Support</Link></li>
+            <div className="flex flex-col">
+              <h4 className="text-paper font-semibold mb-4 md:mb-6 text-[12px] sm:text-[14px] md:text-base">Resources</h4>
+              <ul className="flex flex-col gap-3 md:gap-4">
+                <li><Link href="/tutorials" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Tutorials</Link></li>
+                <li><Link href="/blog" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Blog</Link></li>
+                <li><Link href="/support" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Support</Link></li>
               </ul>
             </div>
 
             {/* Column 3 */}
-            <div className="flex flex-col min-w-[120px]">
-              <h4 className="text-paper font-semibold mb-6 text-base">Company</h4>
-              <ul className="flex flex-col gap-4">
-                <li><Link href="/#about" className="text-muted hover:text-paper transition-colors text-[15px]">About</Link></li>
-                <li><Link href="/careers" className="text-muted hover:text-paper transition-colors text-[15px]">Careers</Link></li>
-                <li><Link href="/contact" className="text-muted hover:text-paper transition-colors text-[15px]">Contact</Link></li>
+            <div className="flex flex-col">
+              <h4 className="text-paper font-semibold mb-4 md:mb-6 text-[12px] sm:text-[14px] md:text-base">Company</h4>
+              <ul className="flex flex-col gap-3 md:gap-4">
+                <li><Link href="/#about" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">About</Link></li>
+                <li><Link href="/careers" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Careers</Link></li>
+                <li><Link href="/contact" className="text-muted hover:text-paper transition-colors text-[12px] sm:text-[14px] md:text-[15px]">Contact</Link></li>
               </ul>
             </div>
           </div>

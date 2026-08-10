@@ -14,11 +14,11 @@ export function DownloadCTA() {
         </p>
 
         {/* Badges */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16">
-          <a href="#" className="transition-transform hover:scale-105 active:scale-95 block h-[52px] w-[170px] relative bg-black rounded-[12px] overflow-hidden shadow-lg border border-white/10">
+        <div className="flex flex-row justify-center items-center gap-3 sm:gap-4 mb-16">
+          <a href="#" className="transition-transform hover:scale-105 active:scale-95 block h-[44px] w-[145px] sm:h-[52px] sm:w-[170px] relative bg-black rounded-[12px] overflow-hidden shadow-lg border border-white/10">
             <Image src="/images/play-store.png" alt="Get it on Google Play" fill className="object-contain scale-[1.02]" />
           </a>
-          <a href="#" className="transition-transform hover:scale-105 active:scale-95 block h-[52px] w-[170px] relative bg-black rounded-[12px] overflow-hidden shadow-lg border border-white/10">
+          <a href="#" className="transition-transform hover:scale-105 active:scale-95 block h-[44px] w-[145px] sm:h-[52px] sm:w-[170px] relative bg-black rounded-[12px] overflow-hidden shadow-lg border border-white/10">
             <Image src="/images/app-store.png" alt="Download on the App Store" fill className="object-cover scale-[1.05]" />
           </a>
         </div>
