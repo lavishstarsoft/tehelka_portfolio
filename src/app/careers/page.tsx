@@ -16,7 +16,7 @@ export default function CareersPage() {
               Join Our Team
             </h1>
             <p className="text-lg md:text-xl text-paper/80 max-w-[600px] mx-auto">
-              Help us build the mobile-first media ecosystem of the future. We are always looking for passionate individuals to join Veeramachaneni Technologies.
+              Help us build the mobile-first media ecosystem of the future. We are always looking for passionate individuals to join VEERAMACHINENI TECHNOLOGIES PRIVATE LIMITED.
             </p>
           </div>
         </section>

@@ -24,7 +24,7 @@ export function About() {
            <div className="lg:col-span-7 flex flex-col justify-center">
               <div className="prose prose-lg text-ink/80 prose-p:leading-relaxed">
                  <p className="mb-6">
-                   Developed by <strong>Veeramachaneni Technologies</strong>, Tehelka News is a first-of-its-kind mobile media platform dedicated to transforming how regional audiences consume information. We recognized a fundamental disconnect between legacy news formats and modern mobile reading habits.
+                   Developed by <strong>VEERAMACHINENI TECHNOLOGIES PRIVATE LIMITED</strong>, Tehelka News is a first-of-its-kind mobile media platform dedicated to transforming how regional audiences consume information. We recognized a fundamental disconnect between legacy news formats and modern mobile reading habits.
                  </p>
                  <p className="mb-6">
                    By building a proprietary news delivery engine, we have created an ecosystem where verified local reporters can instantly reach audiences at a hyperlocal level. Our Made-for-Mobile content strategy ensures that every story is crisp, visual, and highly relevant.
