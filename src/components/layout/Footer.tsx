@@ -84,7 +84,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
           <p className="text-muted text-[13px]">
-            © {new Date().getFullYear()} Tehelka News. All rights reserved.
+            © {new Date().getFullYear()} Veeramachaneni Technologies (Tehelka News). All rights reserved.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
