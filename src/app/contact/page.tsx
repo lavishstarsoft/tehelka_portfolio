@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Building2 } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -30,6 +30,18 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-display font-bold text-ink mb-8">Contact Information</h2>
                 
                 <div className="flex flex-col gap-8">
+                  {/* Legal Entity */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 shrink-0 bg-brand-red/10 rounded-full flex items-center justify-center text-brand-red">
+                      <Building2 size={24} />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-ink mb-1">Legal Entity Name</h4>
+                      <p className="text-ink/70">Veeramachaneni Technologies</p>
+                      <p className="text-ink/60 text-sm">operating the Tehelka News platform</p>
+                    </div>
+                  </div>
+
                   {/* Email */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 shrink-0 bg-brand-red/10 rounded-full flex items-center justify-center text-brand-red">
