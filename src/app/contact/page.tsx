@@ -37,7 +37,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-ink mb-1">Legal Entity Name</h4>
-                      <p className="text-ink/70">Veeramachaneni Technologies</p>
+                      <p className="text-ink/70">VEERAMACHINENI TECHNOLOGIES PRIVATE LIMITED</p>
                       <p className="text-ink/60 text-sm">operating the Tehelka News platform</p>
                     </div>
                   </div>
