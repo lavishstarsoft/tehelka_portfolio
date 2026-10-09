@@ -32,6 +32,9 @@ export function About() {
                  <p>
                    We are deeply committed to Indian local languages, recognizing that true digital inclusion happens only when technology speaks the language of its users. Our platform is engineered not just for scale, but for intimacy—bringing you news from your state, down to your street.
                  </p>
+                 <p className="mt-6 text-sm text-muted">
+                   <strong className="text-ink">Legal Entity Name:</strong> VEERAMACHINENI TECHNOLOGIES PRIVATE LIMITED
+                 </p>
               </div>
            </div>
         </div>
